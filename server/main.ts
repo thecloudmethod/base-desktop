@@ -11,4 +11,6 @@ async function bootstrap() {
   });
   await app.listen(PORT);
 }
-bootstrap().catch(err => console.error(err));
+bootstrap().catch(err => console.error(err)).then(res => {
+  process.send({ ready: true })
+});

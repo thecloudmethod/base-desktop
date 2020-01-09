@@ -1,18 +1,19 @@
 {
-  "name": "@thecloudmethod/base-web",
+  "name": "@thecloudmethod/base-desktop",
   "version": "0.1.0",
-  "description": "My web dev starting point based on @kamilmysliwiec/universal-nest + @angular/material",
+  "description": "My desktop dev starting point based on eletron + @kamilmysliwiec/universal-nest + @angular/material",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thecloudmethod/base-web.git"
+    "url": "https://github.com/thecloudmethod/base-desktop.git"
   },
   "contributors": [
     "Ben Morgan <ben@thecloudmethod.com>"
   ],
+  "main": "index.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0 --disableHostCheck true",
+    "start": "electron .",
     "start:server": "nodemon",
     "serve": "node serve-script",
     "build": "ng build",
@@ -53,6 +54,7 @@
     "dragula": "https://github.com/DevIntent/dragula.git#3.7.4",
     "hammerjs": "^2.0.8",
     "ng2-dragula": "2.1.1",
+    "printer": "^0.4.0",
     "rxjs": "~6.5.2",
     "terser": "^4.1.2",
     "tsconfig-paths": "^3.8.0",
@@ -71,6 +73,8 @@
     "codelyzer": "^5.0.1",
     "cpy-cli": "2.0.0",
     "express": "4.17.1",
+    "electron": "5.0.13",
+    "electron-rebuild": "^1.8.8",
     "http-server": "0.11.1",
     "jasmine-core": "3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
